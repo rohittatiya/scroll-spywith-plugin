@@ -6,7 +6,7 @@
 
 ## Quick Start
 # Clone repository and install dependencies:
-  * git clone https://github.com/rohittatiya/ScrollSpyWithPlugin [your-app-name/location]
+  * git clone https://github.com/rohittatiya/scroll-spywith-plugin [your-app-name/location]
   * cd [your-app-name/location]
   * npm install 
 
