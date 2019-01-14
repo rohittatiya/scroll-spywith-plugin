@@ -1,4 +1,4 @@
-# MATERIALASSIGNMENT
+# Material-Assignment
 
 ## Prerequisites
 1. Node.js greather than or equal to 8.11.3 LTS Version (In this project use Node v8.12.0)
@@ -19,7 +19,7 @@
 # Run test Cases:  
   ng test
 
-### angular-MATERIALASSIGNMENT-app build using:###
+### angular-Material-Assignment-app build using:###
 
 * Angular 6.0.
 * Angular-Cli(6.2.2).
