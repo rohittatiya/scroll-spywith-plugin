@@ -1,0 +1,96 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list snScrollSpy id="content">
+      <a mat-list-item snScrollSpyItem for="content" href="#menu1">Menu 1
+      </a>
+      <a mat-list-item snScrollSpyItem for="content" href="#menu2">Menu 2
+      </a>
+      <a mat-list-item snScrollSpyItem for="content" href="#menu3">Menu 3
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>MaterialAssignemnt</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div>
+      <div id="menu1">
+        <h2 style="margin:0">Menu 1</h2>
+        <sn-scroll-spy-section id="menu1" for="content">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Menu 1</mat-card-title>
+              <mat-card-subtitle>Indian Flag for Independance Day </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/img/indianFlag.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                We celebrate bravery of our ancestors and their gift of freedom. Long may our flag wave! Happy
+                Independence Day!
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+        </sn-scroll-spy-section>
+      </div>
+      <div id="menu2">
+        <h2 style="margin:0">Menu 2</h2>
+        <sn-scroll-spy-section id="menu2" for="content">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Celebration of Makar Sankranti</mat-card-title>
+              <mat-card-subtitle>Title</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/img/sankranti.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The sun signifies knowledge, spiritual light and wisdom. Makar Sankranti signifies that we should turn
+                away from the darkness of delusion in which we live, and begin to joyously let the light within us
+                shine brighter and brighter. We should gradually begin to grow in purity, wisdom, and knowledge, even
+                as the sun does from this day.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+        </sn-scroll-spy-section>
+      </div>
+      <div id="menu3">
+        <h2 style="margin:0">Menu 3</h2>
+        <sn-scroll-spy-section id="menu3" for="content">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Menu 3</mat-card-title>
+              <mat-card-subtitle>Happy New Year</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/img/newyear.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                A New Year is like a blank book, and the pen is in your hands.
+                It is your chance to write a beautiful story for yourself. Happy New Year!
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+        </sn-scroll-spy-section>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
